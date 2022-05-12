@@ -14,3 +14,4 @@ C:\Users\Administrator\Desktop\WF2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.A
 C:\Users\Administrator\Desktop\WF2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddNhanVien.resources
 C:\Users\Administrator\Desktop\WF2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddHDNH.resources
 C:\Users\Administrator\Desktop\WF2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddXe.resources
+C:\Users\Administrator\Desktop\WF2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddKhach.resources

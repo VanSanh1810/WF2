@@ -64,103 +64,106 @@ namespace WindowsFormsApp1
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            switch (type)
+            if(dataGridView1.Rows.Count != 0)
             {
-                case 1:
-                    {
-                        int state = xe.DHorNH(dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim());
-                        switch (state)
+                switch (type)
+                {
+                    case 1:
                         {
-                            case -1: //edit ngan han
-                                {
-                                    byte[] pic;
-                                    pic = (byte[])dataGridView1.CurrentRow.Cells[4].Value;
-                                    MemoryStream picture = new MemoryStream(pic);
-                                    AddXe a = new AddXe(2, dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim(),
-                                                            dataGridView1.CurrentRow.Cells[1].Value.ToString().Trim(),
-                                                            dataGridView1.CurrentRow.Cells[2].Value.ToString().Trim(),
-                                                            "",
-                                                            picture,
-                                                            dataGridView1.CurrentRow.Cells[5].Value.ToString().Trim());
-                                    break;
-                                }
-                            case 1: //edit dai han
-                                {
-                                    byte[] pic;
-                                    pic = (byte[])dataGridView1.CurrentRow.Cells[4].Value;
-                                    MemoryStream picture = new MemoryStream(pic);
-                                    AddXe a = new AddXe(4, dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim(),
-                                                            dataGridView1.CurrentRow.Cells[1].Value.ToString().Trim(),
-                                                            dataGridView1.CurrentRow.Cells[2].Value.ToString().Trim(),
-                                                            dataGridView1.CurrentRow.Cells[3].Value.ToString().Trim(),
-                                                            picture,
-                                                            dataGridView1.CurrentRow.Cells[5].Value.ToString().Trim());
-                                    break;
-                                }
-                            case 0: //Chua co hop dong
-                                {
-                                    MemoryStream mst = new MemoryStream();
-                                    switch(MessageBox.Show("Khong co hop dong /n Ban co muon tao hop dong moi","Thong bao", MessageBoxButtons.YesNo))
+                            int state = xe.DHorNH(dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim());
+                            switch (state)
+                            {
+                                case -1: //edit ngan han
                                     {
-                                        case DialogResult.Yes:
-                                            switch(MessageBox.Show("(Yes) Dai han \n (No) Ngan han", "Thong bao", MessageBoxButtons.YesNo))
-                                            {
-                                                case DialogResult.Yes:
-                                                    {
-                                                        AddXe a = new AddXe(2, "", "", "", "", mst, "");
-                                                        a.Show(this);
-                                                        break;
-                                                    }
-                                                case DialogResult.No:
-                                                    {
-                                                        AddXe a = new AddXe(1, "", "", "", "", mst, "");
-                                                        a.Show(this);
-                                                        break;
-                                                    }
-                                            }
-                                            break;
-                                        case DialogResult.No:
-                                            break;
-                                        
+                                        byte[] pic;
+                                        pic = (byte[])dataGridView1.CurrentRow.Cells[4].Value;
+                                        MemoryStream picture = new MemoryStream(pic);
+                                        AddXe a = new AddXe(2, dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim(),
+                                                                dataGridView1.CurrentRow.Cells[1].Value.ToString().Trim(),
+                                                                dataGridView1.CurrentRow.Cells[2].Value.ToString().Trim(),
+                                                                "",
+                                                                picture,
+                                                                dataGridView1.CurrentRow.Cells[5].Value.ToString().Trim());
+                                        break;
                                     }
-                                    break;
-                                }
+                                case 1: //edit dai han
+                                    {
+                                        byte[] pic;
+                                        pic = (byte[])dataGridView1.CurrentRow.Cells[4].Value;
+                                        MemoryStream picture = new MemoryStream(pic);
+                                        AddXe a = new AddXe(4, dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim(),
+                                                                dataGridView1.CurrentRow.Cells[1].Value.ToString().Trim(),
+                                                                dataGridView1.CurrentRow.Cells[2].Value.ToString().Trim(),
+                                                                dataGridView1.CurrentRow.Cells[3].Value.ToString().Trim(),
+                                                                picture,
+                                                                dataGridView1.CurrentRow.Cells[5].Value.ToString().Trim());
+                                        break;
+                                    }
+                                case 0: //Chua co hop dong
+                                    {
+                                        MemoryStream mst = new MemoryStream();
+                                        switch (MessageBox.Show("Khong co hop dong /n Ban co muon tao hop dong moi", "Thong bao", MessageBoxButtons.YesNo))
+                                        {
+                                            case DialogResult.Yes:
+                                                switch (MessageBox.Show("(Yes) Dai han \n (No) Ngan han", "Thong bao", MessageBoxButtons.YesNo))
+                                                {
+                                                    case DialogResult.Yes:
+                                                        {
+                                                            AddXe a = new AddXe(2, "", "", "", "", mst, "");
+                                                            a.Show(this);
+                                                            break;
+                                                        }
+                                                    case DialogResult.No:
+                                                        {
+                                                            AddXe a = new AddXe(1, "", "", "", "", mst, "");
+                                                            a.Show(this);
+                                                            break;
+                                                        }
+                                                }
+                                                break;
+                                            case DialogResult.No:
+                                                break;
+
+                                        }
+                                        break;
+                                    }
+                            }
+                            break;
                         }
-                        break;
-                    }
-                case 2:
-                    {
-                        dataGridView1.DataSource = khach.getAllKHACK();
-                        break;
-                    }
-                case 3:
-                    {
-                        break;
-                    }
-                case 4:
-                    {
-                        break;
-                    }
-                case 5:
-                    {
-                        AddNhanVien a = new AddNhanVien(2, dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim(),
-                                                            dataGridView1.CurrentRow.Cells[1].Value.ToString().Trim(),
-                                                            dataGridView1.CurrentRow.Cells[2].Value.ToString().Trim(),
-                                                            dataGridView1.CurrentRow.Cells[3].Value.ToString().Trim(),
-                                                            (DateTime)dataGridView1.CurrentRow.Cells[4].Value,
-                                                            dataGridView1.CurrentRow.Cells[5].Value.ToString().Trim(),
-                                                            dataGridView1.CurrentRow.Cells[6].Value.ToString().Trim());
-                        a.Show(this);
-                        break;
-                    }
-                case 6:
-                    {
-                        AddTeam a = new AddTeam(2, dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim(),
-                                                    dataGridView1.CurrentRow.Cells[1].Value.ToString().Trim(),
-                                                    dataGridView1.CurrentRow.Cells[2].Value.ToString().Trim());
-                        a.Show(this);
-                        break;
-                    }
+                    case 2:
+                        {
+                            dataGridView1.DataSource = khach.getAllKHACK();
+                            break;
+                        }
+                    case 3:
+                        {
+                            break;
+                        }
+                    case 4:
+                        {
+                            break;
+                        }
+                    case 5:
+                        {
+                            AddNhanVien a = new AddNhanVien(2, dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim(),
+                                                                dataGridView1.CurrentRow.Cells[1].Value.ToString().Trim(),
+                                                                dataGridView1.CurrentRow.Cells[2].Value.ToString().Trim(),
+                                                                dataGridView1.CurrentRow.Cells[3].Value.ToString().Trim(),
+                                                                (DateTime)dataGridView1.CurrentRow.Cells[4].Value,
+                                                                dataGridView1.CurrentRow.Cells[5].Value.ToString().Trim(),
+                                                                dataGridView1.CurrentRow.Cells[6].Value.ToString().Trim());
+                            a.Show(this);
+                            break;
+                        }
+                    case 6:
+                        {
+                            AddTeam a = new AddTeam(2, dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim(),
+                                                        dataGridView1.CurrentRow.Cells[1].Value.ToString().Trim(),
+                                                        dataGridView1.CurrentRow.Cells[2].Value.ToString().Trim());
+                            a.Show(this);
+                            break;
+                        }
+                }
             }
         }
 

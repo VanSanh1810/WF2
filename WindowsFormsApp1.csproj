@@ -52,6 +52,12 @@
     <Compile Include="AddHDNH.Designer.cs">
       <DependentUpon>AddHDNH.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddKhach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddKhach.Designer.cs">
+      <DependentUpon>AddKhach.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     <Compile Include="TypeList.cs" />
     <EmbeddedResource Include="AddHDNH.resx">
       <DependentUpon>AddHDNH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddKhach.resx">
+      <DependentUpon>AddKhach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddNhanVien.resx">
       <DependentUpon>AddNhanVien.cs</DependentUpon>

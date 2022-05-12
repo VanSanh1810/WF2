@@ -84,7 +84,7 @@ namespace WindowsFormsApp1
 
         public bool UpdateTEAM(string MaTeam, string ChuyenMon, string GhiChu)
         {
-            SqlCommand command = new SqlCommand("UPDATE TEAM SET ChuyenMon = @ChuyenMon GhiChu = @GhiChu WHERE MaTeam = @MaTeam", dB.getConnection);
+            SqlCommand command = new SqlCommand("UPDATE TEAM SET MaTeam = @MaTeam, ChuyenMon = @ChuyenMon, GhiChu = @GhiChu WHERE MaTeam = @MaTeam", dB.getConnection);
             command.Parameters.Add("@MaTeam", SqlDbType.VarChar).Value = MaTeam;
             command.Parameters.Add("@ChuyenMon", SqlDbType.VarChar).Value = ChuyenMon;
             command.Parameters.Add("@GhiChu", SqlDbType.VarChar).Value = GhiChu;

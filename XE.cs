@@ -62,7 +62,7 @@ namespace WindowsFormsApp1
         public bool insertXe(string LoaiXe, string BienSo, string ViTri, MemoryStream HinhAnh, string GhiChu)
         {
             SqlCommand command = new SqlCommand("INSERT INTO XE(MaXe, LoaiXe, BienSo, ViTri, HinhAnh, GhiChu) VALUES (@MaXe, @LoaiXe, @BienSo, @ViTri, @HinhAnh, @GhiChu)", dB.getConnection);
-            command.Parameters.Add("@MaXe", SqlDbType.VarChar).Value = "XE" + 
+            command.Parameters.Add("@MaXe", SqlDbType.VarChar).Value = (LoaiXe == "XeDap")? "XD": (LoaiXe == "XeMay")? "XM": "XH" + 
                                                                         DateTime.Now.Month.ToString() + 
                                                                         DateTime.Now.Day.ToString() + 
                                                                         DateTime.Now.Hour.ToString() + 
