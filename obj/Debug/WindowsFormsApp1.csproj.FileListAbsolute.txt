@@ -15,3 +15,20 @@ C:\Users\Administrator\Desktop\WF2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.A
 C:\Users\Administrator\Desktop\WF2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddHDNH.resources
 C:\Users\Administrator\Desktop\WF2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddXe.resources
 C:\Users\Administrator\Desktop\WF2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddKhach.resources
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\WF2\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\WF2\bin\Debug\WindowsFormsApp1.exe
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\WF2\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\WF2\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\WF2\obj\Debug\WindowsFormsApp1.AddHDNH.resources
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\WF2\obj\Debug\WindowsFormsApp1.AddKhach.resources
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\WF2\obj\Debug\WindowsFormsApp1.AddNhanVien.resources
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\WF2\obj\Debug\WindowsFormsApp1.AddTeam.resources
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\WF2\obj\Debug\WindowsFormsApp1.AddXe.resources
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\WF2\obj\Debug\WindowsFormsApp1.List.resources
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\WF2\obj\Debug\WindowsFormsApp1.Login_form.resources
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\WF2\obj\Debug\WindowsFormsApp1.MainForm.resources
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\WF2\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\WF2\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\WF2\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\WF2\obj\Debug\WindowsFormsApp1.exe
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\WF2\obj\Debug\WindowsFormsApp1.pdb

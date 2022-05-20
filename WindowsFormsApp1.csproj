@@ -137,6 +137,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -150,6 +151,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-custom-motorcycle-logo-ktm-automobile-repair-shop-5b37ce035c8544.964947421530383875379.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-gear-and-car-repair-logo-designs-inspiration-isolated-on-white-png-image_1721329.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ảnh chụp màn hình 2022-02-22 121602.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monochrome-vector-garage-service-logo-retro-style-vintage-car-repair-emblem-wrench-shock-absorber-body-piston-112233491.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

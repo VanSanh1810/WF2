@@ -50,16 +50,20 @@ namespace WindowsFormsApp1
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // contextMenuStrip2
             // 
+            this.contextMenuStrip2.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuStrip2.Name = "contextMenuStrip2";
             this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.xeToolStripMenuItem,
             this.khachToolStripMenuItem,
@@ -68,106 +72,119 @@ namespace WindowsFormsApp1
             this.teamToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1049, 36);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // xeToolStripMenuItem
             // 
+            this.xeToolStripMenuItem.BackColor = System.Drawing.Color.DarkKhaki;
             this.xeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.listXeToolStripMenuItem});
+            this.xeToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xeToolStripMenuItem.Name = "xeToolStripMenuItem";
-            this.xeToolStripMenuItem.Size = new System.Drawing.Size(32, 20);
+            this.xeToolStripMenuItem.Size = new System.Drawing.Size(58, 32);
             this.xeToolStripMenuItem.Text = "Xe";
             // 
             // listXeToolStripMenuItem
             // 
             this.listXeToolStripMenuItem.Name = "listXeToolStripMenuItem";
-            this.listXeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listXeToolStripMenuItem.Size = new System.Drawing.Size(197, 36);
             this.listXeToolStripMenuItem.Text = "List xe";
             this.listXeToolStripMenuItem.Click += new System.EventHandler(this.listXeToolStripMenuItem_Click);
             // 
             // khachToolStripMenuItem
             // 
+            this.khachToolStripMenuItem.BackColor = System.Drawing.Color.LightYellow;
             this.khachToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.listKhachToolStripMenuItem});
+            this.khachToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.khachToolStripMenuItem.Name = "khachToolStripMenuItem";
-            this.khachToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.khachToolStripMenuItem.Size = new System.Drawing.Size(105, 32);
             this.khachToolStripMenuItem.Text = "Khach";
             // 
             // listKhachToolStripMenuItem
             // 
             this.listKhachToolStripMenuItem.Name = "listKhachToolStripMenuItem";
-            this.listKhachToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.listKhachToolStripMenuItem.Size = new System.Drawing.Size(239, 36);
             this.listKhachToolStripMenuItem.Text = "List Khach";
             this.listKhachToolStripMenuItem.Click += new System.EventHandler(this.listKhachToolStripMenuItem_Click);
             // 
             // hopDongToolStripMenuItem
             // 
+            this.hopDongToolStripMenuItem.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.hopDongToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nganHanToolStripMenuItem,
             this.daiHanToolStripMenuItem});
+            this.hopDongToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hopDongToolStripMenuItem.Name = "hopDongToolStripMenuItem";
-            this.hopDongToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.hopDongToolStripMenuItem.Size = new System.Drawing.Size(137, 32);
             this.hopDongToolStripMenuItem.Text = "HopDong";
             // 
             // nganHanToolStripMenuItem
             // 
             this.nganHanToolStripMenuItem.Name = "nganHanToolStripMenuItem";
-            this.nganHanToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.nganHanToolStripMenuItem.Size = new System.Drawing.Size(220, 36);
             this.nganHanToolStripMenuItem.Text = "Ngan Han";
             // 
             // daiHanToolStripMenuItem
             // 
             this.daiHanToolStripMenuItem.Name = "daiHanToolStripMenuItem";
-            this.daiHanToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.daiHanToolStripMenuItem.Size = new System.Drawing.Size(220, 36);
             this.daiHanToolStripMenuItem.Text = "Dai Han";
             // 
             // nhanVienToolStripMenuItem
             // 
+            this.nhanVienToolStripMenuItem.BackColor = System.Drawing.Color.Khaki;
             this.nhanVienToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.listNhanVienToolStripMenuItem});
+            this.nhanVienToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nhanVienToolStripMenuItem.Name = "nhanVienToolStripMenuItem";
-            this.nhanVienToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.nhanVienToolStripMenuItem.Size = new System.Drawing.Size(135, 32);
             this.nhanVienToolStripMenuItem.Text = "NhanVien";
             // 
             // listNhanVienToolStripMenuItem
             // 
             this.listNhanVienToolStripMenuItem.Name = "listNhanVienToolStripMenuItem";
-            this.listNhanVienToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.listNhanVienToolStripMenuItem.Size = new System.Drawing.Size(273, 36);
             this.listNhanVienToolStripMenuItem.Text = "List Nhan vien";
             this.listNhanVienToolStripMenuItem.Click += new System.EventHandler(this.listNhanVienToolStripMenuItem_Click);
             // 
             // teamToolStripMenuItem
             // 
+            this.teamToolStripMenuItem.BackColor = System.Drawing.Color.Gold;
             this.teamToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.listTeamToolStripMenuItem,
             this.addTeamToolStripMenuItem});
+            this.teamToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.teamToolStripMenuItem.Name = "teamToolStripMenuItem";
-            this.teamToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.teamToolStripMenuItem.Size = new System.Drawing.Size(86, 32);
             this.teamToolStripMenuItem.Text = "Team";
             // 
             // listTeamToolStripMenuItem
             // 
             this.listTeamToolStripMenuItem.Name = "listTeamToolStripMenuItem";
-            this.listTeamToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listTeamToolStripMenuItem.Size = new System.Drawing.Size(222, 36);
             this.listTeamToolStripMenuItem.Text = "List team";
             this.listTeamToolStripMenuItem.Click += new System.EventHandler(this.listTeamToolStripMenuItem_Click);
             // 
             // addTeamToolStripMenuItem
             // 
             this.addTeamToolStripMenuItem.Name = "addTeamToolStripMenuItem";
-            this.addTeamToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addTeamToolStripMenuItem.Size = new System.Drawing.Size(222, 36);
             this.addTeamToolStripMenuItem.Text = "Add Team";
             this.addTeamToolStripMenuItem.Click += new System.EventHandler(this.addTeamToolStripMenuItem_Click);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.monochrome_vector_garage_service_logo_retro_style_vintage_car_repair_emblem_wrench_shock_absorber_body_piston_112233491;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(1049, 692);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.menuStrip1.ResumeLayout(false);
