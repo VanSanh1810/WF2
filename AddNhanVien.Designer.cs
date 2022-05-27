@@ -51,10 +51,15 @@ namespace WindowsFormsApp1
             this.err_sdt = new System.Windows.Forms.ErrorProvider(this.components);
             this.err_diachi = new System.Windows.Forms.ErrorProvider(this.components);
             this.err_mateam = new System.Windows.Forms.ErrorProvider(this.components);
+            this.qLSC_RXDataSet = new WindowsFormsApp1.QLSC_RXDataSet();
+            this.tEAMBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tEAMTableAdapter = new WindowsFormsApp1.QLSC_RXDataSetTableAdapters.TEAMTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.err_tentho)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.err_sdt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.err_diachi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.err_mateam)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLSC_RXDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tEAMBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -170,11 +175,14 @@ namespace WindowsFormsApp1
             // 
             // mateam_cbb
             // 
+            this.mateam_cbb.DataSource = this.tEAMBindingSource;
+            this.mateam_cbb.DisplayMember = "MaTeam";
             this.mateam_cbb.FormattingEnabled = true;
             this.mateam_cbb.Location = new System.Drawing.Point(82, 227);
             this.mateam_cbb.Name = "mateam_cbb";
             this.mateam_cbb.Size = new System.Drawing.Size(198, 21);
             this.mateam_cbb.TabIndex = 14;
+            this.mateam_cbb.ValueMember = "MaTeam";
             this.mateam_cbb.Leave += new System.EventHandler(this.mateam_cbb_Leave);
             // 
             // add_btn
@@ -185,6 +193,7 @@ namespace WindowsFormsApp1
             this.add_btn.TabIndex = 15;
             this.add_btn.Text = "Add";
             this.add_btn.UseVisualStyleBackColor = true;
+            this.add_btn.Click += new System.EventHandler(this.add_btn_Click);
             // 
             // update_btn
             // 
@@ -220,6 +229,20 @@ namespace WindowsFormsApp1
             // 
             this.err_mateam.ContainerControl = this;
             // 
+            // qLSC_RXDataSet
+            // 
+            this.qLSC_RXDataSet.DataSetName = "QLSC_RXDataSet";
+            this.qLSC_RXDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tEAMBindingSource
+            // 
+            this.tEAMBindingSource.DataMember = "TEAM";
+            this.tEAMBindingSource.DataSource = this.qLSC_RXDataSet;
+            // 
+            // tEAMTableAdapter
+            // 
+            this.tEAMTableAdapter.ClearBeforeFill = true;
+            // 
             // AddNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -244,10 +267,13 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label1);
             this.Name = "AddNhanVien";
             this.Text = "AddNhanVien";
+            this.Load += new System.EventHandler(this.AddNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.err_tentho)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.err_sdt)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.err_diachi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.err_mateam)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLSC_RXDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tEAMBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,5 +302,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ErrorProvider err_sdt;
         private System.Windows.Forms.ErrorProvider err_diachi;
         private System.Windows.Forms.ErrorProvider err_mateam;
+        private QLSC_RXDataSet qLSC_RXDataSet;
+        private System.Windows.Forms.BindingSource tEAMBindingSource;
+        private QLSC_RXDataSetTableAdapters.TEAMTableAdapter tEAMTableAdapter;
     }
 }

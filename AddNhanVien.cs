@@ -35,6 +35,11 @@ namespace WindowsFormsApp1
                     }
                 case 2: //del update
                     {
+                        matho_tbx.Text = "NV" + DateTime.Now.Month.ToString()
+                                                + DateTime.Now.Day.ToString()
+                                                + DateTime.Now.Hour.ToString()
+                                                + DateTime.Now.Minute.ToString()
+                                                + DateTime.Now.Second.ToString();
                         add_btn.Enabled = false;
                         add_btn.Visible = false;
                         matho_tbx.Text = MaTho;
@@ -100,6 +105,18 @@ namespace WindowsFormsApp1
             {
                 err_mateam.Clear();
             }
+        }
+
+        private void add_btn_Click(object sender, EventArgs e)
+        {
+            tho.insertTHO(tentho_tbx.Text, sdt_tbx.Text, diachi_tbx.Text,dateTimePicker1.Value, mateam_cbb.SelectedValue.ToString(), ghichu_tbx.Text);
+        }
+
+        private void AddNhanVien_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'qLSC_RXDataSet.TEAM' table. You can move, or remove it, as needed.
+            this.tEAMTableAdapter.Fill(this.qLSC_RXDataSet.TEAM);
+
         }
     }
 }
